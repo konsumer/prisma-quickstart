@@ -1,0 +1,36 @@
+{
+  "name": "prisma-quickstart",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "babel-node server",
+    "lint": "standard --parser babel-eslint --fix && graphql lint",
+    "setup": "prisma deploy --new",
+    "deploy": "prisma deploy",
+    "seed": "prisma seed --reset",
+    "reset": "prisma reset",
+    "playground": "graphql playground"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "graphql-cli": "^2.16.5",
+    "prisma": "^1.14.2",
+    "standard": "^11.0.1"
+  },
+  "dependencies": {
+    "apollo-boost": "^0.1.14",
+    "apollo-client": "^0.5.26",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "graphql-yoga": "^1.16.1",
+    "parcel-bundler": "^1.9.7",
+    "prisma-binding": "^2.1.4",
+    "react": "^16.4.2",
+    "react-apollo": "^2.1.11",
+    "react-dom": "^16.4.2",
+    "recompose": "^0.28.2"
+  }
+}

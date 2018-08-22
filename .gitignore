@@ -1,0 +1,10 @@
+# mac
+.DS_Store
+
+# node
+node_modules
+*.log
+
+# parcel
+.cache
+dist

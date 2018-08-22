@@ -1,0 +1,11 @@
+endpoint: ${env:PRISMA_ENDPOINT}
+datamodel: datamodel.graphql
+
+# this will seed your database with an initial user
+seed:
+  import: seed.graphql
+
+# this will output your schema for you when you run prisma deploy
+hooks:
+  post-deploy:
+    - graphql get-schema -p prisma
